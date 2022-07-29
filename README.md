@@ -20,6 +20,7 @@ conda activate venv/
 '''
 
 
+to add requirements.txt file
 '''
 pip install -r requirements.txt
 '''
@@ -29,7 +30,9 @@ to add file to git
 '''
 git add .
 '''
+
 or
+
 '''
 git add <file name>
 '''
@@ -55,3 +58,9 @@ to send version/changes to github
 '''
 git push origin main
 '''
+
+to check remote url
+```
+git remote -v
+```
+
