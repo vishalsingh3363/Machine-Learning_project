@@ -24,3 +24,34 @@ conda activate venv/
 pip install -r requirements.txt
 '''
 
+
+to add file to git
+'''
+git add .
+'''
+or
+'''
+git add <file name>
+'''
+
+
+to check the git status
+'''
+git status
+'''
+
+to check all version maintained by git
+'''
+git log
+'''
+
+
+to create version/commit all changes by git
+'''
+git commit -m "message"
+'''
+
+to send version/changes to github
+'''
+git push origin main
+'''
