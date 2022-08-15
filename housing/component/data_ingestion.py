@@ -1,11 +1,13 @@
-from tkinter import E
 from housing.entity.config_entity import DataIngestionConfig
 import sys,os
 from housing.exception import HousingException
 from housing.logger import logging
 from housing.entity.artifact_entity import DataIngestionArtifact
 import tarfile
-from six.moves import urllib
+import numpy as np
+import urllib
+
+
 import pandas as pd
 from sklearn.model_selection import StratifiedShuffleSplit
 
@@ -13,11 +15,12 @@ class DataIngestion:
 
     def __init__(self,data_ingestion_config:DataIngestionConfig ):
         try:
-            logging.info(f"{'>>'*20}Data Ingestion log started.{'<<'*20} ")
+            logging.info(f"{'='*20}Data Ingestion log started.{'='*20} ")
             self.data_ingestion_config = data_ingestion_config
 
         except Exception as e:
             raise HousingException(e,sys)
+    
 
     def download_housing_data(self,) -> str:
         try:
@@ -126,4 +129,4 @@ class DataIngestion:
 
 
     def __del__(self):
-        logging.info(f"{'>>'*20}Data Ingestion log completed.{'<<'*20} \n\n")
+        logging.info(f"{'='*20}Data Ingestion log completed.{'='*20} \n\n")
