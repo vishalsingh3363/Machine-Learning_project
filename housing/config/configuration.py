@@ -19,7 +19,7 @@ class Configuartion:
             self.time_stamp = current_time_stamp
         except Exception as e:
             raise HousingException(e,sys) from e
-    
+
 
     def get_data_ingestion_config(self) ->DataIngestionConfig:
         try:
@@ -65,7 +65,7 @@ class Configuartion:
             return data_ingestion_config
         except Exception as e:
             raise HousingException(e,sys) from e
-        
+
         
 
     def get_data_validation_config(self) -> DataValidationConfig:
