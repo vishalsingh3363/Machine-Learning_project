@@ -6,6 +6,8 @@ from housing.entity.artifact_entity import DataIngestionArtifact
 import tarfile
 import numpy as np
 import urllib
+import urllib.request
+
 
 import pandas as pd
 from sklearn.model_selection import StratifiedShuffleSplit
