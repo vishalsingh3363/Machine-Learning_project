@@ -6,13 +6,13 @@ from housing.config.configuration import Configuartion
 import os
 def main():
     try:
-        config_path = os.path.join("config","config.yaml")
-        pipeline = Pipeline(Configuartion(config_file_path=config_path))
-        pipeline.run_pipeline()
+        #config_path = os.path.join("config","config.yaml") 
+        #pipeline = Pipeline(Configuartion(config_file_path=config_path))
+        #pipeline.run_pipeline()
         
-        logging.info("main function execution completed.")
-        # # data_validation_config = Configuartion().get_data_transformation_config()
-        # # print(data_validation_config)
+        #logging.info("main function execution completed.")
+        data_validation_config = Configuartion().get_data_transformation_config()
+        print(data_validation_config)
         # schema_file_path=r"D:\Project\machine_learning_project\config\schema.yaml"
         # file_path=r"D:\Project\machine_learning_project\housing\artifact\data_ingestion\2022-06-27-19-13-17\ingested_data\train\housing.csv"
 
