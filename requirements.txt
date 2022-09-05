@@ -5,4 +5,5 @@ sklearn
 pandas
 evidently
 dill
+matplotlib
 -e .
