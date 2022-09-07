@@ -2,7 +2,7 @@ from setuptools import setup,find_packages
 from typing import List
 
 #Declaring variables for setup functions
-PROJECT_NAME="housing-predictor"
+PROJECT_NAME="house-price-prediction11"
 VERSION="0.0.3"
 AUTHOR="Vishal Singh"
 DESRCIPTION="This is a first FSDS Nov batch Machine Learning Project"
